@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divine Foam & Mattress | Nadiad</title>
+<meta name="description" content="Divine Foam & Mattress, Nadiad — Foam, Mattress, Cushion, Fabric, Recron, Adhesive and Lining Work Materials for Wholesale, B2B and Retail.">
+
+<style>
+:root{
+  --dark:#111315; --text:#202326; --muted:#687078; --light:#f5f6f7;
+  --white:#fff; --accent:#ef3340; --accent-dark:#c92531;
+  --border:#e3e6e8; --shadow:0 12px 35px rgba(0,0,0,.08); --radius:18px;
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{width:min(92%,var(--max));margin:auto}
+
+.topbar{background:var(--dark);color:#fff;font-size:13px;padding:8px 0}
+.topbar-inner{display:flex;justify-content:space-between;align-items:center;gap:15px}
+
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:13px;min-width:0}
+.brand-logo{
+  width:62px;
+  height:62px;
+  object-fit:contain;
+  flex-shrink:0;
+}
+
+.brand-title{
+  font-size:22px;
+  font-weight:850;
+  line-height:1.15;
+  letter-spacing:-.3px;
+}
+
+.brand-subtitle{
+  font-size:12.5px;
+  color:var(--muted);
+  margin-top:5px;
+}.nav-actions{display:flex;align-items:center;gap:9px}
+.lang-btn{border:1px solid var(--border);background:#fff;border-radius:30px;padding:9px 14px;cursor:pointer;font-weight:800}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  min-height:46px;
+  padding:12px 21px;
+  border-radius:12px;
+  font-weight:800;
+  font-size:14px;
+  letter-spacing:.1px;
+  border:1px solid transparent;
+  cursor:pointer;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    background .25s ease,
+    border-color .25s ease;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btn-primary{
+  background:var(--accent);
+  color:#fff;
+  box-shadow:0 7px 18px rgba(239,51,64,.20);
+}
+
+.btn-primary:hover{
+  background:var(--accent-dark);
+  box-shadow:0 10px 24px rgba(239,51,64,.28);
+}
+
+.btn-dark{
+  background:var(--dark);
+  color:#fff;
+  box-shadow:0 7px 18px rgba(0,0,0,.14);
+}
+
+.btn-dark:hover{
+  background:#25292c;
+  box-shadow:0 10px 24px rgba(0,0,0,.20);
+}
+
+.btn-outline{
+  background:#fff;
+  color:var(--dark);
+  border-color:var(--border);
+  box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.btn-outline:hover{
+  border-color:#c9ced2;
+  background:#f8f9fa;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.hero{
+  background:
+    radial-gradient(circle at 82% 45%,rgba(239,51,64,.06),transparent 28%),
+    linear-gradient(120deg,#f4f5f6 0%,#fff 58%,#f7f7f7 100%);
+  padding:96px 0 88px;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:70px;
+  align-items:center;
+}
+
+.eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:30px;
+  padding:8px 15px;
+  font-size:13px;
+  font-weight:800;
+  margin-bottom:22px;
+  box-shadow:0 7px 22px rgba(0,0,0,.06);
+}
+
+.eyebrow-dot{
+  width:9px;
+  height:9px;
+  background:var(--accent);
+  border-radius:50%;
+  box-shadow:0 0 0 5px rgba(239,51,64,.08);
+}
+
+.hero h1{
+  font-size:clamp(43px,6vw,76px);
+  line-height:1.02;
+  letter-spacing:-3px;
+  margin-bottom:24px;
+}
+
+.hero h1 strong{
+  color:var(--accent);
+}
+
+.hero-lead{
+  font-size:19px;
+  line-height:1.7;
+  color:var(--muted);
+  max-width:680px;
+  margin-bottom:30px;
+}
+
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+}
+
+.hero-note{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+.hero-visual{
+  position:relative;
+  min-height:410px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.foam-stack{
+  position:relative;
+  width:min(100%,410px);
+  height:350px;
+  filter:drop-shadow(0 18px 25px rgba(0,0,0,.08));
+}
+
+.foam-layer{
+  position:absolute;
+  width:84%;
+  height:100px;
+  left:8%;
+  border-radius:17px;
+  box-shadow:
+    0 20px 32px rgba(0,0,0,.14),
+    inset 0 1px 0 rgba(255,255,255,.45);
+}
+
+.foam-1{
+  top:34px;
+  background:linear-gradient(135deg,#e4e6e8,#cdd1d4);
+  transform:rotate(-6deg);
+}
+
+.foam-2{
+  top:116px;
+  background:linear-gradient(135deg,#cbd0d4,#b5bbc0);
+  transform:rotate(4deg);
+}
+
+.foam-3{
+  top:198px;
+  background:linear-gradient(135deg,#a9afb4,#8e959b);
+  transform:rotate(-3deg);
+}
+
+.foam-label{
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--dark);
+  color:#fff;
+  padding:11px 19px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:800;
+  white-space:nowrap;
+  box-shadow:0 8px 20px rgba(0,0,0,.18);
+}
+section{padding:82px 0}
+.section-head{max-width:750px;margin-bottom:42px}
+.section-kicker{color:var(--accent);font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:1.3px;margin-bottom:9px}
+.section-title{font-size:clamp(30px,4vw,46px);line-height:1.1;letter-spacing:-1.2px;margin-bottom:13px}
+.section-desc{color:var(--muted);font-size:17px}
+
+.business-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.business-card{padding:34px;border:1px solid var(--border);border-radius:var(--radius);background:#fff;box-shadow:var(--shadow)}
+.business-card.featured{background:var(--dark);color:#fff}
+.business-icon{font-size:34px;margin-bottom:15px}.business-card h3{font-size:27px;margin-bottom:10px}
+.business-card p{color:var(--muted)}.business-card.featured p{color:#c9ced2}
+.business-list{list-style:none;margin-top:18px;display:grid;gap:8px}
+.business-list li::before{content:"✓";color:var(--accent);font-weight:900;margin-right:8px}
+
+.seo-section{background:#fafafa}
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.product-card{
+  border:1px solid var(--border);
+  border-radius:20px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 5px 18px rgba(0,0,0,.05);
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease;
+}
+
+.product-card:hover{
+  transform:translateY(-7px);
+  box-shadow:0 16px 35px rgba(0,0,0,.11);
+  border-color:#d5d9dc;
+}
+
+.product-placeholder{
+  height:165px;
+  background:linear-gradient(135deg,#f1f3f4,#dfe3e6);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:48px;
+  color:#6d747a;
+  position:relative;
+}
+
+.product-placeholder::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    135deg,
+    rgba(255,255,255,.28),
+    transparent 55%
+  );
+  pointer-events:none;
+}
+
+.product-content{
+  padding:24px 23px 23px;
+}
+
+.product-content h3{
+  font-size:20px;
+  line-height:1.25;
+  margin-bottom:9px;
+  letter-spacing:-.2px;
+}
+
+.product-content p{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.65;
+}
+
+.product-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-top:16px;
+}
+
+.tag{
+  background:var(--light);
+  color:#454b50;
+  border:1px solid #e5e7e9;
+  border-radius:20px;
+  padding:5px 10px;
+  font-size:11px;
+  font-weight:800;
+}
+
+.brands{
+  background:
+    linear-gradient(180deg,#f7f8f9 0%,#eef0f2 100%);
+}
+
+.brand-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+
+.brand-box{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:17px;
+  padding:25px 15px;
+  min-height:88px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-weight:900;
+  box-shadow:0 5px 16px rgba(0,0,0,.045);
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.brand-box:hover{
+  transform:translateY(-4px);
+  border-color:#d1d5d8;
+  box-shadow:0 12px 26px rgba(0,0,0,.09);
+}
+.stats{
+  background:
+    radial-gradient(circle at 50% 0%,rgba(255,255,255,.06),transparent 42%),
+    var(--dark);
+  color:#fff;
+}
+
+.stats .section-kicker{
+  color:#ff6873;
+}
+
+.stats .section-desc{
+  color:#c9ced2;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:14px;
+}
+
+.stat{
+  padding:29px 14px 27px;
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:17px;
+  text-align:center;
+  background:rgba(255,255,255,.045);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    border-color .25s ease;
+}
+
+.stat:hover{
+  transform:translateY(-4px);
+  background:rgba(255,255,255,.075);
+  border-color:rgba(255,255,255,.22);
+}
+
+.stat-number{
+  font-size:clamp(28px,3.2vw,43px);
+  font-weight:900;
+  line-height:1.05;
+  letter-spacing:-1px;
+  margin-bottom:10px;
+}
+
+.stat-label{
+  color:#c9ced2;
+  font-size:13px;
+  line-height:1.4;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.why-card{
+  position:relative;
+  padding:27px 28px;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:#fff;
+  box-shadow:0 5px 16px rgba(0,0,0,.045);
+  overflow:hidden;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.why-card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background:var(--accent);
+  opacity:.8;
+}
+
+.why-card:hover{
+  transform:translateY(-5px);
+  border-color:#d4d8db;
+  box-shadow:0 13px 28px rgba(0,0,0,.09);
+}
+
+.why-card h3{
+  font-size:19px;
+  line-height:1.3;
+  margin-bottom:8px;
+}
+
+.why-card p{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.65;
+}.seo-copy{max-width:920px;color:var(--muted)}.seo-copy p+p{margin-top:14px}.seo-copy strong{color:var(--text)}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:28px;
+}
+
+.contact-card{
+  padding:34px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:#fff;
+  box-shadow:0 7px 22px rgba(0,0,0,.06);
+}
+
+.contact-item{
+  padding:18px 0;
+  border-bottom:1px solid var(--border);
+}
+
+.contact-item:last-child{
+  border-bottom:0;
+}
+
+.contact-item strong{
+  display:block;
+  margin-bottom:6px;
+  font-size:15px;
+}
+
+.contact-item span,
+.contact-item a{
+  color:var(--muted);
+  line-height:1.55;
+}
+
+.contact-item a{
+  transition:color .2s ease;
+}
+
+.contact-item a:hover{
+  color:var(--accent);
+}
+
+.map-box{
+  min-height:390px;
+  border-radius:20px;
+  background:
+    radial-gradient(circle at 50% 40%,rgba(255,255,255,.5),transparent 45%),
+    linear-gradient(135deg,#e9ecef,#cfd4d8);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:28px;
+  box-shadow:0 7px 22px rgba(0,0,0,.06);
+}
+
+.map-box-inner{
+  background:#fff;
+  padding:28px;
+  border-radius:18px;
+  box-shadow:0 12px 28px rgba(0,0,0,.10);
+  max-width:360px;
+}
+
+.map-box-inner h3{
+  margin-bottom:9px;
+  font-size:21px;
+}
+
+.map-box-inner p{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.55;
+  margin-bottom:18px;
+}
+footer{
+  background:
+    radial-gradient(circle at 85% 20%,rgba(255,255,255,.05),transparent 30%),
+    #0b0d0f;
+  color:#fff;
+  padding:46px 0;
+  border-top:1px solid rgba(255,255,255,.06);
+}
+
+.footer-grid{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:center;
+}
+
+.footer-title{
+  font-size:21px;
+  font-weight:900;
+  line-height:1.25;
+}
+
+.footer-text{
+  color:#aeb5ba;
+  font-size:13px;
+  line-height:1.5;
+  margin-top:7px;
+}
+
+.footer-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.footer-links a{
+  color:#fff;
+  font-size:13px;
+  padding:7px 10px;
+  border-radius:8px;
+  transition:
+    background .2s ease,
+    color .2s ease;
+}
+
+.footer-links a:hover{
+  background:rgba(255,255,255,.08);
+  color:#ff6873;
+}
+.whatsapp{position:fixed;right:18px;bottom:18px;z-index:2000;width:57px;height:57px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:25px;font-weight:900;box-shadow:0 8px 25px rgba(0,0,0,.2)}
+
+/* SCROLL TO TOP */
+#scrollTopBtn{
+  position:fixed;
+  right:18px;
+  bottom:88px;
+  z-index:99999;
+  width:50px;
+  height:50px;
+  border:0;
+  border-radius:50%;
+  background:#111315;
+  color:#fff;
+  font-size:28px;
+  font-weight:900;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transform:translateY(10px);
+  transition:opacity .25s ease,visibility .25s ease,transform .25s ease;
+  box-shadow:0 8px 22px rgba(0,0,0,.25);
+}
+#scrollTopBtn.show{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+#scrollTopBtn:hover{background:#ef3340}
+.dealer{
+  margin-top:24px;
+  background:var(--dark);
+  color:#fff;
+  border-radius:20px;
+  padding:28px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:24px;
+  border:1px solid rgba(255,255,255,.08);
+  box-shadow:0 12px 28px rgba(0,0,0,.12);
+}
+
+.dealer strong{
+  display:block;
+  font-size:20px;
+  line-height:1.3;
+}
+
+.dealer small{
+  display:block;
+  color:#c9ced2;
+  margin-top:6px;
+  font-size:13px;
+  line-height:1.5;
+}
+@media(max-width:900px){
+  .hero-grid,.contact-grid{grid-template-columns:1fr}
+  .hero{padding-top:55px}.hero-visual{min-height:310px}
+  .product-grid{grid-template-columns:repeat(2,1fr)}
+  .brand-grid{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stats-grid .stat:last-child{grid-column:span 2}
+  .dealer{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:680px){
+  .topbar-inner{justify-content:center;text-align:center}.top-email{display:none}
+  .nav{
+  min-height:72px;
+}
+
+.brand-logo{
+  width:52px;
+  height:52px;
+}
+
+.brand-title{
+  font-size:19px;
+}
+
+.brand-subtitle{
+  font-size:10.5px;
+}
+  .hero h1{letter-spacing:-1.5px}.hero-lead{font-size:16px}
+  .hero-buttons{flex-direction:column}.hero-buttons .btn{width:100%}
+  section{padding:62px 0}.business-grid,.product-grid,.why-grid{grid-template-columns:1fr}
+  .brand-grid{grid-template-columns:repeat(2,1fr)}
+  .stats-grid{grid-template-columns:1fr 1fr}.stats-grid .stat:last-child{grid-column:span 2}
+  .footer-grid{flex-direction:column;align-items:flex-start}.map-box{min-height:300px}
+  #scrollTopBtn{right:15px;bottom:82px;width:46px;height:46px;font-size:25px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span data-gu="📍 નડિયાદ, ગુજરાત | Wholesale • B2B • Retail" data-en="📍 Nadiad, Gujarat | Wholesale • B2B • Retail">📍 નડિયાદ, ગુજરાત | Wholesale • B2B • Retail</span>
+    <span class="top-email">📧 divinesleepsol@gmail.com</span>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a href="#home" class="brand">
+      <img src="divine-logo.png" alt="Divine Foam & Mattress logo" class="brand-logo">
+      <div>
+        <div class="brand-title" data-gu="ડીવાઈન ફોમ & મેટ્રેસ" data-en="Divine Foam & Mattress">ડીવાઈન ફોમ & મેટ્રેસ</div>
+        <div class="brand-subtitle" data-gu="ફોમ • મેટ્રેસ • કુશન • મટિરિયલ્સ" data-en="Foam • Mattress • Cushion • Materials">ફોમ • મેટ્રેસ • કુશન • મટિરિયલ્સ</div>
+      </div>
+    </a>
+    <div class="nav-actions">
+      <a class="btn btn-primary" href="tel:+919724415440">📞 <span data-gu="કૉલ" data-en="Call">કૉલ</span></a>
+      <button class="lang-btn" id="languageBtn">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow"><span class="eyebrow-dot"></span><span data-gu="નડિયાદમાં ફોમ અને મેટ્રેસ સપ્લાયર" data-en="Foam & Mattress Supplier in Nadiad">નડિયાદમાં ફોમ અને મેટ્રેસ સપ્લાયર</span></div>
+      <h1><span data-gu="Comfort માટે યોગ્ય" data-en="The Right Material for">Comfort માટે યોગ્ય</span><br><strong data-gu="મટિરિયલ." data-en="Better Comfort.">મટિરિયલ.</strong></h1>
+      <p class="hero-lead" data-gu="ડીવાઈન ફોમ & મેટ્રેસ — નડિયાદમાં Foam, Mattress, Cushion, Fabric, Recron, Adhesive અને Lining Work Materials માટે Wholesale, B2B અને Retail supply." data-en="Divine Foam & Mattress — Wholesale, B2B and Retail supplier in Nadiad for Foam, Mattress, Cushion, Fabric, Recron, Adhesive and Lining Work Materials.">ડીવાઈન ફોમ & મેટ્રેસ — નડિયાદમાં Foam, Mattress, Cushion, Fabric, Recron, Adhesive અને Lining Work Materials માટે Wholesale, B2B અને Retail supply.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/919724415440?text=Hello%20Divine%20Foam%20%26%20Mattress" class="btn btn-primary" target="_blank">💬 WhatsApp</a>
+        <a href="tel:+919724415440" class="btn btn-dark">📞 <span data-gu="હમણાં કૉલ કરો" data-en="Call Now">હમણાં કૉલ કરો</span></a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Divine%20Foam%20%26%20Mattress%2C%20Pij%20Rd%2C%20near%20MF%20Furniture%2C%20Napad%2C%20Nadiad%2C%20Gujarat%20387002" class="btn btn-outline" target="_blank">📍 <span data-gu="રસ્તો જુઓ" data-en="Directions">રસ્તો જુઓ</span></a>
+      </div>
+      <div class="hero-note" data-gu="Furniture • Sofa • Mattress • Upholstery • Lining Work માટે ઉપયોગી સામગ્રી" data-en="Materials for Furniture • Sofa • Mattress • Upholstery • Lining Work">Furniture • Sofa • Mattress • Upholstery • Lining Work માટે ઉપયોગી સામગ્રી</div>
+    </div>
+    <div class="hero-visual">
+      <div class="foam-stack"><div class="foam-layer foam-1"></div><div class="foam-layer foam-2"></div><div class="foam-layer foam-3"></div><div class="foam-label">Premium Foam Materials</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="business">
+<div class="container">
+  <div class="section-head">
+    <div class="section-kicker" data-gu="અમે કોને સેવા આપીએ છીએ" data-en="WHO WE SERVE">અમે કોને સેવા આપીએ છીએ</div>
+    <h2 class="section-title" data-gu="Wholesale, B2B અને Retail — ત્રણેય માટે." data-en="Wholesale, B2B & Retail — All Under One Roof.">Wholesale, B2B અને Retail — ત્રણેય માટે.</h2>
+    <p class="section-desc" data-gu="તમારી જરૂરિયાત પ્રમાણે quantity અને material selectionમાં મદદ." data-en="Material selection and supply support based on your requirement and quantity.">તમારી જરૂરિયાત પ્રમાણે quantity અને material selectionમાં મદદ.</p>
+  </div>
+  <div class="business-grid">
+    <div class="business-card featured"><div class="business-icon">🏢</div><h3 data-gu="B2B અને Wholesale" data-en="B2B & Wholesale">B2B અને Wholesale</h3><p data-gu="Furniture shops, mattress makers, sofa manufacturers, upholsterers, lining workers અને furnishing businesses માટે." data-en="For furniture shops, mattress makers, sofa manufacturers, upholsterers, lining workers and furnishing businesses.">Furniture shops, mattress makers, sofa manufacturers, upholsterers, lining workers અને furnishing businesses માટે.</p><ul class="business-list"><li>Regular material supply</li><li>Multiple foam grades</li><li>Fabric અને Recron materials</li><li>Adhesive અને lining materials</li><li>Business quantity enquiries</li></ul></div>
+    <div class="business-card"><div class="business-icon">🏠</div><h3 data-gu="Retail" data-en="Retail">Retail</h3><p data-gu="ઘર, office, sofa, bed, cushion અને repair/renovation માટે જરૂરી materials." data-en="Materials for home, office, sofa, bed, cushion and repair or renovation work.">ઘર, office, sofa, bed, cushion અને repair/renovation માટે જરૂરી materials.</p><ul class="business-list"><li>Foam sheets</li><li>Mattress અને cushion materials</li><li>Mattress Fabric અને Sofa Fabric</li><li>Adhesive</li><li>Lining work hardware</li></ul></div>
+  </div>
+</div>
+</section>
+
+<section id="products" class="seo-section">
+<div class="container">
+  <div class="section-head"><div class="section-kicker">PRODUCT RANGE</div><h2 class="section-title" data-gu="તમારા કામ માટે જરૂરી materials" data-en="Materials for Your Work">તમારા કામ માટે જરૂરી materials</h2><p class="section-desc" data-gu="Foamથી લઈને lining hardware સુધી — એક જ જગ્યાએ." data-en="From foam to lining hardware — a practical range under one roof.">Foamથી લઈને lining hardware સુધી — એક જ જગ્યાએ.</p></div>
+  <div class="product-grid">
+    <article class="product-card"><div class="product-placeholder">▰</div><div class="product-content"><h3>Foam</h3><p>PU Foam, HR Foam, Bonded Foam, Soft Foam, Hard Foam અને Memory Foam.</p><div class="product-tags"><span class="tag">PU</span><span class="tag">HR</span><span class="tag">Bonded</span><span class="tag">Memory</span></div></div></article>
+    <article class="product-card"><div class="product-placeholder">▰</div><div class="product-content"><h3>Mattress & Cushion</h3><p>Mattress, cushion અને comfort applications માટે વિવિધ materials.</p></div></article>
+    <article class="product-card"><div class="product-placeholder">◫</div><div class="product-content"><h3>EPE Armour Sheet</h3><p>Protection, packing અને furnishing-related applications માટે EPE Armour Sheet.</p></div></article>
+    <article class="product-card"><div class="product-placeholder">▤</div><div class="product-content"><h3>Mattress & Sofa Fabric</h3><p>Mattress Fabric અને Sofa Fabric માટે વિવિધ options.</p></div></article>
+    <article class="product-card"><div class="product-placeholder">≈</div><div class="product-content"><h3>Recron Padding</h3><p>Cushioning, upholstery અને furnishing applications માટે Recron padding.</p></div></article>
+    <article class="product-card"><div class="product-placeholder">◆</div><div class="product-content"><h3>Adhesive</h3><p>Sprayable અને Non-Sprayable Adhesive.</p><div class="product-tags"><span class="tag">Sprayable</span><span class="tag">Non-Sprayable</span></div></div></article>
+    <article class="product-card"><div class="product-placeholder">+</div><div class="product-content"><h3>Lining Work Hardware</h3><p>Stapler Pin અને lining work માટે જરૂરી અન્ય hardware items.</p></div></article>
+  </div>
+</div>
+</section>
+
+<section class="brands" id="brands">
+<div class="container">
+  <div class="section-head"><div class="section-kicker">BRANDS</div><h2 class="section-title" data-gu="વિશ્વસનીય Foam Brands" data-en="Trusted Foam Brands">વિશ્વસનીય Foam Brands</h2><p class="section-desc" data-gu="તમારી application પ્રમાણે યોગ્ય foam પસંદ કરવામાં મદદ." data-en="We help you choose suitable foam based on your application.">તમારી application પ્રમાણે યોગ્ય foam પસંદ કરવામાં મદદ.</p></div>
+  <div class="brand-grid"><div class="brand-box">KurlOn</div><div class="brand-box">Prime Comfort</div><div class="brand-box">Jindal</div><div class="brand-box">Flexipol-Resiflex</div></div>
+  <div class="dealer"><div><strong>Authorized Dealer — Pidilite / Fevicol</strong><small>Adhesive requirements માટે authorized supply.</small></div><a href="https://wa.me/919724415440?text=I%20need%20Pidilite%20%2F%20Fevicol%20adhesive" class="btn btn-primary" target="_blank">Enquire</a></div>
+</div>
+</section>
+
+<section class="stats" id="numbers">
+<div class="container">
+  <div class="section-head"><div class="section-kicker">OUR JOURNEY</div><h2 class="section-title" data-gu="અંકોથી આગળ — અનુભવ અને supply" data-en="More Than Numbers — Experience & Supply">અંકોથી આગળ — અનુભવ અને supply</h2><p class="section-desc" data-gu="અમારા અત્યાર સુધીના કામ અને supplyના માપદંડો." data-en="A snapshot of materials supplied and comfort created.">અમારા અત્યાર સુધીના કામ અને supplyના માપદંડો.</p></div>
+  <div class="stats-grid">
+    <div class="stat"><div class="stat-number" data-target="43200">0</div><div class="stat-label" data-gu="sq.ft. Comfort" data-en="sq.ft. Comfort">sq.ft. Comfort</div></div>
+    <div class="stat"><div class="stat-number" data-target="20">0</div><div class="stat-label" data-gu="Metric Tonnes Foam" data-en="Metric Tonnes Foam">Metric Tonnes Foam</div></div>
+    <div class="stat"><div class="stat-number" data-target="600">0</div><div class="stat-label" data-gu="Litres Adhesive" data-en="Litres Adhesive">Litres Adhesive</div></div>
+    <div class="stat"><div class="stat-number" data-target="2500">0</div><div class="stat-label" data-gu="Metres Mattress Fabric" data-en="Metres Mattress Fabric">Metres Mattress Fabric</div></div>
+    <div class="stat"><div class="stat-number" data-target="700">0</div><div class="stat-label" data-gu="Metres Recron" data-en="Metres Recron">Metres Recron</div></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="section-head"><div class="section-kicker">WHY DIVINE FOAM</div><h2 class="section-title" data-gu="તમારા business માટે practical supply partner" data-en="A Practical Supply Partner for Your Business">તમારા business માટે practical supply partner</h2></div>
+  <div class="why-grid">
+    <div class="why-card"><h3>✓ Wholesale અને B2B Focus</h3><p>Business requirements અને regular supply માટે suitable options.</p></div>
+    <div class="why-card"><h3>✓ Multiple Foam Grades</h3><p>PU, HR, Bonded, Soft, Hard અને Memory Foam.</p></div>
+    <div class="why-card"><h3>✓ Complete Material Range</h3><p>Foam સાથે mattress, cushion, fabric, Recron, adhesive અને lining materials.</p></div>
+    <div class="why-card"><h3>✓ Convenient Nadiad Location</h3><p>Pij Road, near MF Furniture, Napad, Nadiad.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="seo-section">
+<div class="container">
+  <div class="section-head"><div class="section-kicker">NADIAD • GUJARAT</div><h2 class="section-title" data-gu="Nadiadમાં Foam અને Mattress Materials" data-en="Foam & Mattress Materials in Nadiad">Nadiadમાં Foam અને Mattress Materials</h2></div>
+  <div class="seo-copy">
+    <p><strong>Divine Foam & Mattress</strong> નડિયાદ, ગુજરાતમાં foam, mattress અને furnishing materials માટે local supplier છે. અમે <strong>B2B અને retail customers</strong>ને foam, mattress, cushion, fabric, Recron, adhesive અને lining work materials supply કરીએ છીએ.</p>
+    <p>જો તમે <strong>Nadiadમાં mattress shop</strong>, <strong>mattress store near me</strong>, bed cushion materials, foam sheets અથવા mattress-making materials શોધી રહ્યા હો, તો અમારી range ઘરેલુ ગ્રાહકો તેમજ furniture shops, sofa makers, mattress makers અને upholstery professionals માટે ઉપયોગી છે.</p>
+    <p>અમે <strong>PU Foam, HR Foam, Bonded Foam, Soft Foam, Hard Foam અને Memory Foam</strong> ઉપરાંત EPE Armour Sheet, Mattress Fabric, Sofa Fabric, Recron Padding, Sprayable અને Non-Sprayable Adhesive, Stapler Pins તથા અન્ય lining work hardware supply કરીએ છીએ.</p>
+    <p>અમારી shop <strong>Pij Road, near MF Furniture, Napad, Nadiad, Gujarat 387002</strong> ખાતે આવેલી છે. Product availability, B2B requirements અને wholesale enquiries માટે સીધો સંપર્ક કરો.</p>
+  </div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+  <div class="section-head"><div class="section-kicker">CONTACT & VISIT</div><h2 class="section-title" data-gu="અમારી સાથે જોડાઓ" data-en="Visit or Contact Us">અમારી સાથે જોડાઓ</h2><p class="section-desc">Product enquiry, B2B supply અથવા shop visit માટે સીધો સંપર્ક કરો.</p></div>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-item"><strong>📍 સરનામું</strong><span>Pij Rd, near MF Furniture,<br>Napad, Nadiad, Gujarat 387002</span></div>
+      <div class="contact-item"><strong>📞 Phone / WhatsApp</strong><a href="tel:+919724415440">97244 15440</a><br><a href="tel:+917779059058">77790 59058</a></div>
+      <div class="contact-item"><strong>📧 Email</strong><a href="mailto:divinesleepsol@gmail.com">divinesleepsol@gmail.com</a></div>
+      <div class="contact-item"><strong>🕘 ખુલવાનો સમય</strong><span>સોમ–ગુરુ, શનિ: 9:30 AM – 7:30 PM<br>શુક્રવાર: 9:30 AM – 12:00 PM અને 3:00 PM – 7:30 PM<br>રવિવાર: બંધ</span></div>
+      <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px"><a href="tel:+919724415440" class="btn btn-dark">📞 કૉલ</a><a href="https://wa.me/919724415440" class="btn btn-primary" target="_blank">💬 WhatsApp</a></div>
+    </div>
+    <div class="map-box"><div class="map-box-inner"><h3>📍 ડીવાઈન ફોમ & મેટ્રેસ શોધો</h3><p>Pij Road, near MF Furniture,<br>Napad, Nadiad, Gujarat 387002</p><a href="https://www.google.com/maps/dir/?api=1&destination=Divine%20Foam%20%26%20Mattress%2C%20Pij%20Rd%2C%20near%20MF%20Furniture%2C%20Napad%2C%20Nadiad%2C%20Gujarat%20387002" class="btn btn-primary" target="_blank">📍 Google Maps ખોલો</a></div></div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container footer-grid">
+  <div><div class="footer-title">ડીવાઈન ફોમ & મેટ્રેસ</div><div class="footer-text">Foam • Mattress • Cushion • Mattress Fabric • Recron • Adhesive • Lining Materials</div><div class="footer-text">Nadiad, Gujarat 387002</div></div>
+  <div class="footer-links"><a href="#home">હોમ</a><a href="#products">પ્રોડક્ટ્સ</a><a href="#brands">Brands</a><a href="#numbers">અમારા આંકડા</a><a href="#contact">સંપર્ક</a></div>
+</div>
+</footer>
+
+<!-- SCROLL TO TOP BUTTON -->
+<button id="scrollTopBtn" type="button" aria-label="Scroll to top" title="Back to top">↑</button>
+
+<a href="https://wa.me/919724415440?text=Hello%20Divine%20Foam%20%26%20Mattress" class="whatsapp" target="_blank" aria-label="WhatsApp">💬</a>
+
+<script>
+(function(){
+
+  /* LANGUAGE */
+  var currentLanguage = "gu";
+  var languageBtn = document.getElementById("languageBtn");
+
+  if(languageBtn){
+    languageBtn.addEventListener("click", function(){
+      currentLanguage = currentLanguage === "gu" ? "en" : "gu";
+
+      document.querySelectorAll("[data-gu][data-en]").forEach(function(el){
+        el.textContent = currentLanguage === "gu"
+          ? el.getAttribute("data-gu")
+          : el.getAttribute("data-en");
+      });
+
+      languageBtn.textContent = currentLanguage === "gu" ? "EN" : "ગુજરાતી";
+      document.documentElement.lang = currentLanguage;
+    });
+  }
+
+  /* COUNTERS — REPEAT FROM ZERO EVERY TIME THE SECTION IS ENTERED */
+  var statsSection = document.getElementById("numbers");
+  var counters = document.querySelectorAll(".stat-number");
+
+  function animateCounters(){
+    counters.forEach(function(counter){
+      var target = parseInt(counter.getAttribute("data-target"),10) || 0;
+      var duration = 1600;
+      var startTime = null;
+
+      counter.textContent = "0";
+
+      function animate(now){
+        if(!startTime) startTime = now;
+
+        var progress = Math.min((now - startTime) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        var value = Math.floor(target * eased);
+
+        counter.textContent = value.toLocaleString("en-IN") + "+";
+
+        if(progress < 1){
+          requestAnimationFrame(animate);
+        }else{
+          counter.textContent = target.toLocaleString("en-IN") + "+";
+        }
+      }
+
+      requestAnimationFrame(animate);
+    });
+  }
+
+  if(statsSection){
+    var statsObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          animateCounters();
+        }
+      });
+    }, {threshold:0.25});
+
+    statsObserver.observe(statsSection);
+  }
+
+  /* SCROLL TO TOP — NO DEPENDENCY ON DOMContentLoaded */
+  var scrollTopBtn = document.getElementById("scrollTopBtn");
+
+  function updateScrollButton(){
+    if(!scrollTopBtn) return;
+
+    if(window.scrollY > 350){
+      scrollTopBtn.classList.add("show");
+    }else{
+      scrollTopBtn.classList.remove("show");
+    }
+  }
+
+  if(scrollTopBtn){
+    window.addEventListener("scroll", updateScrollButton, {passive:true});
+
+    scrollTopBtn.addEventListener("click", function(){
+      window.scrollTo({
+        top:0,
+        behavior:"smooth"
+      });
+    });
+
+    updateScrollButton();
+  }
+
+})();
+</script>
+
+</body>
+</html>
