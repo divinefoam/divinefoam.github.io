@@ -736,6 +736,30 @@ footer{
   .footer-grid{flex-direction:column;align-items:flex-start}.map-box{min-height:300px}
   #scrollTopBtn{right:15px;bottom:82px;width:46px;height:46px;font-size:25px}
 }
+    .brand-box-logo{
+  flex-direction:column;
+  gap:10px;
+  overflow:hidden;
+}
+
+.brand-box-logo img{
+  width:100%;
+  max-width:180px;
+  height:75px;
+  object-fit:contain;
+  display:block;
+}
+
+.brand-box-logo span{
+  font-weight:700;
+}
+
+@media(max-width:680px){
+  .brand-box-logo img{
+    max-width:145px;
+    height:60px;
+  }
+}
 </style>
   <script type="application/ld+json">
 {
@@ -863,8 +887,29 @@ footer{
 <section class="brands" id="brands">
 <div class="container">
   <div class="section-head"><div class="section-kicker">BRANDS</div><h2 class="section-title" data-gu="વિશ્વસનીય Foam Brands" data-en="Trusted Foam Brands">વિશ્વસનીય Foam Brands</h2><p class="section-desc" data-gu="તમારી application પ્રમાણે યોગ્ય foam પસંદ કરવામાં મદદ." data-en="We help you choose suitable foam based on your application.">તમારી application પ્રમાણે યોગ્ય foam પસંદ કરવામાં મદદ.</p></div>
-  <div class="brand-grid"><div class="brand-box">KurlOn</div><div class="brand-box">Prime Comfort</div><div class="brand-box">Jindal</div><div class="brand-box">Flexipol-Resiflex</div></div>
-  <div class="dealer"><div><strong>Authorized Dealer — Pidilite / Fevicol</strong><small>Adhesive requirements માટે authorized supply.</small><small>FoamFix, 5in1, FastTack and Other Products.</small></div><div class="dealer-image">
+  <div class="brand-grid">
+
+  <div class="brand-box brand-box-logo">
+    <img src="kurlon.jpg" alt="KurlOn Foam">
+    <span>KurlOn</span>
+  </div>
+
+  <div class="brand-box brand-box-logo">
+    <img src="PrimeComfort.png" alt="Prime Comfort Foam">
+    <span>Prime Comfort</span>
+  </div>
+
+  <div class="brand-box brand-box-logo">
+    <img src="jindal.png" alt="Jindal Petro Foams">
+    <span>Jindal</span>
+  </div>
+
+  <div class="brand-box brand-box-logo">
+    <img src="resiflex.jpg" alt="Flexipol Resiflex Foam">
+    <span>Flexipol-Resiflex</span>
+  </div>
+
+</div>  <div class="dealer"><div><strong>Authorized Dealer — Pidilite / Fevicol</strong><small>Adhesive requirements માટે authorized supply.</small><small>FoamFix, 5in1, FastTack and Other Products.</small></div><div class="dealer-image">
     <img
       src="pidilite.jpg"
       alt="Pidilite and Fevicol products - Authorized Dealer"
