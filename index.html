@@ -195,55 +195,14 @@ header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);backd
   justify-content:center;
 }
 
-.foam-stack{
-  position:relative;
-  width:min(100%,410px);
-  height:350px;
-  filter:drop-shadow(0 18px 25px rgba(0,0,0,.08));
-}
-
-.foam-layer{
-  position:absolute;
-  width:84%;
-  height:100px;
-  left:8%;
-  border-radius:17px;
-  box-shadow:
-    0 20px 32px rgba(0,0,0,.14),
-    inset 0 1px 0 rgba(255,255,255,.45);
-}
-
-.foam-1{
-  top:34px;
-  background:linear-gradient(135deg,#e4e6e8,#cdd1d4);
-  transform:rotate(-6deg);
-}
-
-.foam-2{
-  top:116px;
-  background:linear-gradient(135deg,#cbd0d4,#b5bbc0);
-  transform:rotate(4deg);
-}
-
-.foam-3{
-  top:198px;
-  background:linear-gradient(135deg,#a9afb4,#8e959b);
-  transform:rotate(-3deg);
-}
-
-.foam-label{
-  position:absolute;
-  bottom:0;
-  left:50%;
-  transform:translateX(-50%);
-  background:var(--dark);
-  color:#fff;
-  padding:11px 19px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:800;
-  white-space:nowrap;
-  box-shadow:0 8px 20px rgba(0,0,0,.18);
+.hero-visual img{
+  display:block;
+  width:100%;
+  max-width:510px;
+  height:auto;
+  aspect-ratio:900 / 1125;
+  object-fit:cover;
+  border-radius:22px;
 }
 section{padding:82px 0}
 .section-head{max-width:750px;margin-bottom:42px}
@@ -704,6 +663,19 @@ footer{
   .stats-grid{grid-template-columns:repeat(2,1fr)}
   .stats-grid .stat:last-child{grid-column:span 2}
 
+  @media(max-width:680px){
+  .hero-visual{
+    min-height:auto;
+    margin-top:20px;
+  }
+
+  .hero-visual img{
+    width:100%;
+    max-width:100%;
+    aspect-ratio:900 / 1125;
+    object-fit:cover;
+  }
+}
   .dealer{
     align-items:flex-start;
     flex-direction:column;
@@ -842,7 +814,7 @@ footer{
   ],
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Pij Road, near MF Furniture, Napad",
+    "streetAddress": "Pij Road, near MF Furniture",
     "addressLocality": "Nadiad",
     "addressRegion": "Gujarat",
     "postalCode": "387002",
@@ -1128,7 +1100,7 @@ footer{
     <p><strong>Divine Foam & Mattress</strong> નડિયાદ, ગુજરાતમાં foam, mattress અને furnishing materials માટે local supplier છે. અમે <strong>B2B અને retail customers</strong>ને foam, mattress, cushion, fabric, Recron, adhesive અને lining work materials supply કરીએ છીએ.</p>
     <p>જો તમે <strong>Nadiadમાં mattress shop</strong>, <strong>mattress store near me</strong>, bed cushion materials, foam sheets અથવા mattress-making materials શોધી રહ્યા હો, તો અમારી range ઘરેલુ ગ્રાહકો તેમજ furniture shops, sofa makers, mattress makers અને upholstery professionals માટે ઉપયોગી છે.</p>
     <p>અમે <strong>PU Foam, HR Foam, Bonded Foam, Soft Foam, Hard Foam અને Memory Foam</strong> ઉપરાંત EPE Armour Sheet, Mattress Fabric, Sofa Fabric, Recron Padding, Sprayable અને Non-Sprayable Adhesive, Stapler Pins તથા અન્ય lining work hardware supply કરીએ છીએ.</p>
-    <p>અમારી shop <strong>Pij Road, near MF Furniture, Napad, Nadiad, Gujarat 387002</strong> ખાતે આવેલી છે. Product availability, B2B requirements અને wholesale enquiries માટે સીધો સંપર્ક કરો.</p>
+    <p>અમારી shop <strong>Pij Road, near MF Furniture, Nadiad, Gujarat 387002</strong> ખાતે આવેલી છે. Product availability, B2B requirements અને wholesale enquiries માટે સીધો સંપર્ક કરો.</p>
   </div>
 </div>
 </section>
@@ -1138,13 +1110,13 @@ footer{
   <div class="section-head"><div class="section-kicker">CONTACT & VISIT</div><h2 class="section-title" data-gu="અમારી સાથે જોડાઓ" data-en="Visit or Contact Us">અમારી સાથે જોડાઓ</h2><p class="section-desc">Product enquiry, B2B supply અથવા shop visit માટે સીધો સંપર્ક કરો.</p></div>
   <div class="contact-grid">
     <div class="contact-card">
-      <div class="contact-item"><strong>📍 સરનામું</strong><span>Pij Road, near MF Furniture,<br>Napad, Nadiad, Gujarat 387002</span></div>
+      <div class="contact-item"><strong>📍 સરનામું</strong><span>Pij Road, near MF Furniture,<br> Nadiad, Gujarat 387002</span></div>
       <div class="contact-item"><strong>📞 Phone / WhatsApp</strong><a href="tel:+919724415440">97244 15440</a><br></div>
       <div class="contact-item"><strong>📧 Email</strong><a href="mailto:divinesleepsol@gmail.com">divinesleepsol@gmail.com</a></div>
       <div class="contact-item"><strong>🕘 ખુલવાનો સમય</strong><span>સોમ–ગુરુ, શનિ: 9:30 AM – 7:30 PM<br>શુક્રવાર: 9:30 AM – 12:00 PM અને 3:00 PM – 7:30 PM<br>રવિવાર: બંધ</span></div>
       <div style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px"><a href="tel:+919724415440" class="btn btn-dark">📞 કૉલ</a><a href="https://wa.me/919724415440" class="btn btn-primary" target="_blank">💬 WhatsApp</a></div>
     </div>
-    <div class="map-box"><div class="map-box-inner"><h3>📍 ડીવાઈન ફોમ & મેટ્રેસ શોધો</h3><p>Pij Road, near MF Furniture,<br>Napad, Nadiad, Gujarat 387002</p><a href="https://www.google.com/maps/dir//Divine+Foam+%26+Mattress,+Pij+Rd,+near+MF+Furniture,+Napad,+Nadiad,+Gujarat+387001/@22.6913952,72.8510116,17z/data=!4m16!1m7!3m6!1s0x395e5b6f0ce4845d:0x5ac37f8a9d93f951!2sDivine+Foam+%26+Mattress!8m2!3d22.6913903!4d72.8535865!16s%2Fg%2F11xt41tz3g!4m7!1m0!1m5!1m1!1s0x395e5b6f0ce4845d:0x5ac37f8a9d93f951!2m2!1d72.8535865!2d22.6913903?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D" class="btn btn-primary" target="_blank">📍 Google Maps ખોલો</a></div></div>
+    <div class="map-box"><div class="map-box-inner"><h3>📍 ડીવાઈન ફોમ & મેટ્રેસ શોધો</h3><p>Pij Road, near MF Furniture,<br> Nadiad, Gujarat 387002</p><a href="https://www.google.com/maps/dir//Divine+Foam+%26+Mattress,+Pij+Rd,+near+MF+Furniture,+Napad,+Nadiad,+Gujarat+387001/@22.6913952,72.8510116,17z/data=!4m16!1m7!3m6!1s0x395e5b6f0ce4845d:0x5ac37f8a9d93f951!2sDivine+Foam+%26+Mattress!8m2!3d22.6913903!4d72.8535865!16s%2Fg%2F11xt41tz3g!4m7!1m0!1m5!1m1!1s0x395e5b6f0ce4845d:0x5ac37f8a9d93f951!2m2!1d72.8535865!2d22.6913903?entry=ttu&g_ep=EgoyMDI2MDgxMS4wIKXMDSoASAFQAw%3D%3D" class="btn btn-primary" target="_blank">📍 Google Maps ખોલો</a></div></div>
   </div>
 </div>
 </section>
