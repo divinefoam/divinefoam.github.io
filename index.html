@@ -1107,6 +1107,96 @@ footer{
   }
 }
 
+
+/* =========================================================
+   FOAM IMAGE FRAMING + WHY DIVINE MAP-INSPIRED SECTION
+========================================================= */
+.foam-product-image img{
+  object-position:center 60%;
+}
+
+.why-section{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background-color:#f1f3ec;
+  background-image:
+    radial-gradient(ellipse at 8% 18%,rgba(178,205,165,.42),transparent 26%),
+    radial-gradient(ellipse at 92% 78%,rgba(191,211,177,.38),transparent 28%),
+    linear-gradient(28deg,transparent 46%,rgba(255,255,255,.92) 46%,rgba(255,255,255,.92) 50%,transparent 50%),
+    linear-gradient(118deg,transparent 32%,rgba(255,255,255,.94) 32%,rgba(255,255,255,.94) 36%,transparent 36%),
+    linear-gradient(168deg,transparent 69%,rgba(255,255,255,.94) 69%,rgba(255,255,255,.94) 73%,transparent 73%),
+    repeating-linear-gradient(0deg,transparent 0 54px,rgba(190,199,183,.28) 55px 56px),
+    repeating-linear-gradient(90deg,transparent 0 68px,rgba(190,199,183,.24) 69px 70px);
+}
+
+.why-section::before{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  width:340px;
+  height:340px;
+  right:-105px;
+  top:-150px;
+  border:2px solid rgba(181,45,59,.12);
+  border-radius:50%;
+  box-shadow:0 0 0 28px rgba(181,45,59,.035),0 0 0 62px rgba(181,45,59,.025);
+  pointer-events:none;
+}
+
+.why-section::after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  width:190px;
+  height:190px;
+  left:-65px;
+  bottom:-95px;
+  border-radius:50%;
+  background:rgba(181,45,59,.07);
+  box-shadow:0 0 0 24px rgba(181,45,59,.035);
+  pointer-events:none;
+}
+
+.why-section > .container{
+  position:relative;
+  z-index:1;
+}
+
+.why-section .section-head{
+  padding:25px 28px;
+  margin-bottom:24px;
+  border:1px solid rgba(255,255,255,.82);
+  border-radius:20px;
+  background:rgba(255,255,255,.72);
+  box-shadow:0 8px 24px rgba(43,35,29,.045);
+  backdrop-filter:blur(5px);
+}
+
+.why-section .why-card{
+  background:rgba(255,255,255,.94);
+  border-color:rgba(225,220,210,.95);
+  box-shadow:0 12px 28px rgba(43,35,29,.075);
+}
+
+.why-section .why-card:hover{
+  background:#fff;
+  border-color:#d8c1b8;
+  box-shadow:0 17px 34px rgba(43,35,29,.12);
+}
+
+@media(max-width:680px){
+  .foam-product-image img{
+    object-position:center 60%;
+  }
+  .why-section .section-head{
+    padding:20px 18px;
+  }
+  .why-section .why-card{
+    background:rgba(255,255,255,.96);
+  }
+}
+
 </style>
   <script type="application/ld+json">
 {
@@ -1248,7 +1338,7 @@ footer{
   <div class="section-head"><div class="section-kicker">PRODUCT RANGE</div><h2 class="section-title" data-gu="તમારા કામ માટે જરૂરી materials" data-en="Materials for Your Work">તમારા કામ માટે જરૂરી materials</h2><p class="section-desc" data-gu="Foamથી લઈને lining hardware સુધી — એક જ જગ્યાએ." data-en="From foam to lining hardware — a practical range under one roof.">Foamથી લઈને lining hardware સુધી — એક જ જગ્યાએ.</p></div>
   <div class="product-grid">
     <article class="product-card">
-  <div class="product-image">
+  <div class="product-image foam-product-image">
     <img
       src="foam.webp"
       alt="Foam sheets at Divine Foam & Mattress"
@@ -1406,7 +1496,7 @@ footer{
 </div>
 </section>
 
-<section>
+<section class="why-section">
 <div class="container">
   <div class="section-head"><div class="section-kicker">WHY DIVINE FOAM</div><h2 class="section-title" data-gu="તમારા business માટે practical supply partner" data-en="A Practical Supply Partner for Your Business">તમારા business માટે practical supply partner</h2></div>
   <div class="why-grid">
