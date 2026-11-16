@@ -1180,7 +1180,7 @@ footer{
   function animateCounters(){
     counters.forEach(function(counter){
       var target = parseInt(counter.getAttribute("data-target"), 10) || 0;
-      var duration = 1600;
+      var duration = 2200;
       var startTime = null;
 
       counter.textContent = "0";
@@ -1206,13 +1206,10 @@ footer{
   }
 
   if(statsSection){
-    var countersAnimated = false;
     var statsObserver = new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
-        if(entry.isIntersecting && !countersAnimated){
-          countersAnimated = true;
+        if(entry.isIntersecting){
           animateCounters();
-          statsObserver.disconnect();
         }
       });
     }, {threshold:0.25});
