@@ -1,0 +1,89 @@
+name: Optimize website images
+
+on:
+  push:
+    branches:
+      - optimize-website-images
+    paths:
+      - ".github/workflows/optimize-website-images.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout optimization branch
+        uses: actions/checkout@v4
+        with:
+          ref: optimize-website-images
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install image optimizer
+        run: npm install --no-save --no-package-lock sharp
+
+      - name: Convert site images to WebP
+        run: |
+          node <<'NODE'
+          const sharp = require('sharp');
+          const fs = require('fs');
+
+          const photos = [
+            'foam.png',
+            'mattress.jpg',
+            'epe.png',
+            'fabric.png',
+            'recron.jpg',
+            'fevi.png',
+            'hardware.png',
+            'pidilite.jpg'
+          ];
+          const logos = [
+            'kurlon.jpg',
+            'PrimeComfort.png',
+            'jindal.png',
+            'resiflex.jpg'
+          ];
+
+          (async () => {
+            for (const file of photos) {
+              const out = file.replace(/\.(png|jpe?g)$/i, '.webp');
+              await sharp(file)
+                .rotate()
+                .resize({ width: 1400, height: 1400, fit: 'inside', withoutEnlargement: true })
+                .webp({ quality: 80, effort: 5, smartSubsample: true })
+                .toFile(out);
+              console.log('Optimized', file, '->', out);
+            }
+            for (const file of logos) {
+              const out = file.replace(/\.(png|jpe?g)$/i, '.webp');
+              await sharp(file)
+                .rotate()
+                .resize({ width: 700, height: 500, fit: 'inside', withoutEnlargement: true })
+                .webp({ quality: 82, effort: 5, smartSubsample: true })
+                .toFile(out);
+              console.log('Optimized logo', file, '->', out);
+            }
+
+            let html = fs.readFileSync('index.html', 'utf8');
+            for (const file of [...photos, ...logos]) {
+              const webp = file.replace(/\.(png|jpe?g)$/i, '.webp');
+              html = html.replaceAll('src="' + file + '"', 'src="' + webp + '"');
+            }
+            fs.writeFileSync('index.html', html);
+          })().catch(error => { console.error(error); process.exit(1); });
+          NODE
+
+      - name: Commit optimized images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html foam.webp mattress.webp epe.webp fabric.webp recron.webp fevi.webp hardware.webp pidilite.webp kurlon.webp PrimeComfort.webp jindal.webp resiflex.webp
+          git commit -m "Optimize website images as WebP [skip ci]"
+          git push origin optimize-website-images
